@@ -1,6 +1,6 @@
 # Задание 1
 num = int(input())
-if num % 2 == 0 or num % 1 == .5:
+if num % 10 == 0 or num % 10 == 5 or num % 10 == 2:
     print(num)
 else:
     print(num + 1)
@@ -34,7 +34,7 @@ x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-if (x2-x1) == 2 and (y2-y1) == 1 or (x2-x1) == 1 and (y2-y1) == 1:
+if abs(x2-x1) == 2 and abs(y2-y1) == 1 or abs(x2-x1) == 1 and abs(y2-y1) == 2 :
     print("Yes")
 else:
     print("No")
