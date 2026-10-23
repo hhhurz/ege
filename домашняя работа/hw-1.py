@@ -1,40 +1,29 @@
-# Задание 1
-num = int(input())
-if num % 10 == 0 or num % 10 == 5 or num % 10 == 2:
-    print(num)
-else:
-    print(num + 1)
+from turtle import *
 
-# Задание 2
-num = int(input())
-if num > 0:
-    print(num + 1)
-else:
-    print(num - 1)
+screensize(100000,100000)
+m=10
+tracer(0)
+lt(90)
+for i in range(2):
+    fd(25*m)
+    rt(90)
+    fd(10*m)
+    rt(90)
+fd(3*m)
+lt(90)
+fd(15*m)
+rt(90)
+for i in range(2):
+    fd(9*m)
+    rt(90)
+    fd(32*m)
+    rt(90)
+for x in range(-10,10):
+    for y in range(-10,10):
+        teleport(x*m,y*m)
+        dot(3,"red")
+print(250,9*32)
 
-# Задание 3
-num = int(input())
-if 0 < num < 100:
-    if num % 3 == 0:
-        print(num // 3)
-    else:
-        print(num * 2)
+update()
+done()
 
-# Задание 4
-x = int(input())
-if x > 0:
-    print(x * 2 + 5)
-elif x < 0:
-    print( x ** 2 - 1)
-else:
-    print(x)
-
-# Задание 5
-x1 = int(input())
-y1 = int(input())
-x2 = int(input())
-y2 = int(input())
-if abs(x2-x1) == 2 and abs(y2-y1) == 1 or abs(x2-x1) == 1 and abs(y2-y1) == 2 :
-    print("Yes")
-else:
-    print("No")
