@@ -1,4 +1,4 @@
-with open(r'..\files\24_865.txt') as file:
+with open(r'../files/24_865.txt') as file:
     data = file.readline()
 
 cnt = ans = 0
