@@ -1,34 +1,11 @@
-from turtle import *
+ans = []
 
-tracer(0)
-screensize(10000000,10000000)
-lt(90)
-m = 10
-for i in range(6):
-     fd(33*m)
-     rt(90)
-     fd(20*m)
-     rt(90)
-up()
-fd(3*m)
-rt(90)
-fd(9*m)
-lt(90)
-down()
-for i in range(6):
-    fd(24*m)
-    rt(90)
-    fd(25*m)
-    rt(90)
-for x in range(9,21):
-    for y in range(3,28):
-        teleport(x*m,y*m)
-        dot(3,"red")
-
-print(10*23)
-
-
-
-
-update()
-done()
+for n in range(1,100000):
+    r = f"{n:b}"
+    if n % 8 == 0:
+        r = r + r[-2:]
+    else:
+        r = r + f"{n % 8 * 2:b}"
+    if int(r,2) > 3000:
+        ans.append(n)
+print(min(ans))
